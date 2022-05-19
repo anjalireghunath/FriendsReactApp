@@ -7,7 +7,7 @@ const AddFriend = () => {
   var [friendnick,setFriendnick]=useState("")
   var [describeyourfrnd,setDescribe]=useState("")
   const subData=()=>{
-    const data={"name":name,"friendname":friendname,"friendnick":friendnick,"describeyourfrd":describeyourfrnd}
+    const data={"name":name,"friendName":friendname,"friendNickName":friendnick,"DescribeYourFriend":describeyourfrnd}
     console.log(data)
   }
   return (

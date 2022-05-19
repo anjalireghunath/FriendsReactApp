@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import AddFriend from './components/AddFriend';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import View from './components/View';
 
 function App() {
   return (
