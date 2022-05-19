@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, { useState } from 'react'
 import Header from './Header'
 
@@ -9,6 +10,9 @@ const AddFriend = () => {
   const subData=()=>{
     const data={"name":name,"friendName":friendname,"friendNickName":friendnick,"DescribeYourFriend":describeyourfrnd}
     console.log(data)
+    axios.post("https://dummyapifriends.herokuapp.com/adddata",data).then((response)=>{
+      console.log(response.data)
+    })
   }
   return (
     <div>
