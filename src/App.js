@@ -11,6 +11,7 @@ function App() {
      <BrowserRouter>
      <Routes>
        <Route path='/' exact element={<AddFriend/>}/>
+       <Route path='/view' exact element={<View/>}/>
      </Routes>
      </BrowserRouter>
    </div>
