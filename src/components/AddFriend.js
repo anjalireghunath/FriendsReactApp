@@ -12,6 +12,14 @@ const AddFriend = () => {
     console.log(data)
     axios.post("https://dummyapifriends.herokuapp.com/adddata",data).then((response)=>{
       console.log(response.data)
+
+      if(response.data.status=="success")
+      {
+          alert("successfully inserted")
+      }
+      else{
+          alert("failed to insert")
+      }
     })
   }
   return (
